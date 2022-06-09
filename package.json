@@ -6,6 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "dev:up": "docker-compose -f docker-compose.yml -f docker-compose.dev.yml up",
+    "prod:up": "docker-compose -f docker-compose.yml -f docker-compose.prod.yml up",
     "lint": "next lint"
   },
   "dependencies": {
@@ -14,6 +16,7 @@
     "@emotion/react": "^11",
     "@emotion/style": "^0.8.0",
     "@emotion/styled": "^11",
+    "@hookform/resolvers": "^2.9.0",
     "axios": "^0.27.2",
     "framer-motion": "^6",
     "next": "12.1.6",
@@ -22,6 +25,8 @@
     "react-hook-form": "^7.31.3",
     "react-icons": "^4.4.0",
     "react-query": "^3.39.1",
+    "react-tsparticles": "^2.0.6",
+    "tsparticles": "^2.0.6",
     "yup": "^0.32.11"
   },
   "devDependencies": {

@@ -5,12 +5,15 @@ import { ReactQueryDevtools } from "react-query/devtools";
 
 import { theme } from "../styles/theme";
 import { queryClient } from "../services/queryClient";
+import { SidebarDrawerProvider } from "../contexts/SidebarDrawerContext";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <QueryClientProvider client={queryClient}>
       <ChakraProvider theme={theme}>
-        <Component {...pageProps} />
+        <SidebarDrawerProvider>
+          <Component {...pageProps} />
+        </SidebarDrawerProvider>
       </ChakraProvider>
       <ReactQueryDevtools />
     </QueryClientProvider>
