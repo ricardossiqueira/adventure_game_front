@@ -9,7 +9,7 @@ export function Logo() {
         letterSpacing="tight"
         w="64"
       >
-        AdventureGame
+        Adventure Game
       </Text>
     </>
   );

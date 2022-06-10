@@ -1,44 +1,26 @@
+import { theme } from "@chakra-ui/react";
 import { IParticlesProps } from "react-tsparticles";
 
 export const particles: IParticlesProps = {
   options: {
+    fullScreen: {
+      enable: true,
+      zIndex: -1,
+    },
     background: {
       color: {
-        value: "#000814",
-      },
-    },
-    fpsLimit: 120,
-    interactivity: {
-      events: {
-        onClick: {
-          enable: true,
-          mode: "push",
-        },
-        onHover: {
-          enable: true,
-          mode: "repulse",
-        },
-        resize: true,
-      },
-      modes: {
-        push: {
-          quantity: 4,
-        },
-        repulse: {
-          distance: 100,
-          duration: 0.4,
-        },
+        value: theme.colors.gray[900],
       },
     },
     particles: {
       color: {
-        value: "#ffffff",
+        value: theme.colors.gray[50],
       },
       links: {
-        color: "#ffffff",
+        color: theme.colors.gray[50],
         distance: 150,
         enable: true,
-        opacity: 0.5,
+        opacity: 0.3,
         width: 1,
       },
       collisions: {
@@ -50,7 +32,7 @@ export const particles: IParticlesProps = {
         outModes: {
           default: "bounce",
         },
-        random: false,
+        random: true,
         speed: 1,
         straight: false,
       },
@@ -62,7 +44,7 @@ export const particles: IParticlesProps = {
         value: 50,
       },
       opacity: {
-        value: 0.5,
+        value: 0.8,
       },
       shape: {
         type: "circle",
