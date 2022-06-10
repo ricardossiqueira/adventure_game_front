@@ -1,3 +1,4 @@
+import { theme } from "@chakra-ui/react";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 import { cloneElement, ReactElement } from "react";
@@ -21,7 +22,7 @@ export function ActiveLink({
 
   if (
     !shouldMatchExactHref &&
-    (asPath.startsWith(String(rest.href)) || asPath.startsWith(String(rest.as)))
+    (asPath.endsWith(String(rest.href)) || asPath.endsWith(String(rest.as)))
   )
     isActive = true;
 

@@ -17,10 +17,10 @@ export function SidebarNav() {
           <NavLink icon={RiHome2Line} href="/">
             Início
           </NavLink>
-          <NavLink icon={RiUser2Line} href="/personagens">
+          <NavLink icon={RiUser2Line} href="/characters">
             Personagens
           </NavLink>
-          <NavLink icon={RiBook2Line} href="/missoes">
+          <NavLink icon={RiBook2Line} href="/missions">
             Missões
           </NavLink>
         </NavSection>

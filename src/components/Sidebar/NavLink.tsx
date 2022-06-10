@@ -9,7 +9,7 @@ import { ElementType } from "react";
 import { ActiveLink } from "../ActiveLink";
 
 interface NavLinkProps {
-  icon: ElementType;
+  icon?: ElementType;
   children: string;
   rest?: ChakraLinkProps;
   href: string;
@@ -20,7 +20,7 @@ export function NavLink({ icon, children, href, ...rest }: NavLinkProps) {
     <>
       <ActiveLink href={href} passHref>
         <ChakraLink display={"flex"} alignContent="center" {...rest}>
-          <Icon as={icon} fontSize="xl" />
+          {!!icon && <Icon as={icon} fontSize="xl" />}
           <Text ml={4} fontWeight="md">
             {children}
           </Text>

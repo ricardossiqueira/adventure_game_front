@@ -33,7 +33,7 @@ export const particles: IParticlesProps = {
           default: "bounce",
         },
         random: true,
-        speed: 1,
+        speed: 0.8,
         straight: false,
       },
       number: {
@@ -41,7 +41,7 @@ export const particles: IParticlesProps = {
           enable: true,
           area: 800,
         },
-        value: 50,
+        value: 60,
       },
       opacity: {
         value: 0.8,

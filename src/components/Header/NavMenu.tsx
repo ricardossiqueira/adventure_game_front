@@ -6,15 +6,9 @@ export function NavMenu() {
   return (
     <>
       <HStack p={2} spacing={"10"}>
-        <NavLink icon={RiHome2Line} href="/">
-          Início
-        </NavLink>
-        <NavLink icon={RiUser2Line} href="/personagens">
-          Personagens
-        </NavLink>
-        <NavLink icon={RiBook2Line} href="/missoes">
-          Missões
-        </NavLink>
+        <NavLink href="/">Início</NavLink>
+        <NavLink href="/characters">Personagens</NavLink>
+        <NavLink href="/missions">Missões</NavLink>
       </HStack>
     </>
   );
