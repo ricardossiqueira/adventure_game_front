@@ -41,7 +41,7 @@ export function Header() {
 
       {isWideView && <NavMenu />}
       <Flex align="center" ml="auto">
-        <NotificationsNav />
+        {/* <NotificationsNav /> */}
         <Profile showProfileData={isWideView} />
       </Flex>
     </Flex>

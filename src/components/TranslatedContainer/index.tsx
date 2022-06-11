@@ -3,14 +3,14 @@ import { Box, theme, Flex, Center } from "@chakra-ui/react";
 export function TranslatedContainer() {
   return (
     <Box
-      h={720}
-      w={540}
+      h={"70vh"}
+      w={"30vw"}
       backgroundColor={"transparent"}
       style={{ perspective: "1000px" }}
     >
       <Box
-        h={720}
-        w={540}
+        h={"100%"}
+        w={"100%"}
         backgroundColor={"gray.800"}
         borderRadius={"1rem"}
         borderColor={"yellow.400"}

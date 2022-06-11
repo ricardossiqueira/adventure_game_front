@@ -1,6 +1,6 @@
 import Head from "next/head";
-import { AnimatedCanvas } from "../components/Background/AnimatedCanvas";
 import { Header } from "../components/Header";
+import { Sidebar } from "../components/Sidebar";
 
 export default function Missions() {
   return (
@@ -9,7 +9,7 @@ export default function Missions() {
         <title>Personagens | Adventure Game</title>
       </Head>
       <Header />
-      <AnimatedCanvas />
+      <Sidebar />
       <main></main>
     </>
   );

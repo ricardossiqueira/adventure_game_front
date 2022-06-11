@@ -6,7 +6,6 @@ import Head from "next/head";
 
 import { Input } from "../components/Form/Input";
 import { Logo } from "../components/Header/Logo";
-import { AnimatedCanvas } from "../components/Background/AnimatedCanvas";
 
 type SignInFormData = {
   email: string;
@@ -35,7 +34,6 @@ export default function SignIn() {
         <title>Login | Adventure Game</title>
       </Head>
       <main id="main">
-        <AnimatedCanvas />
         <Flex w="100vw" h="100vh" align="center" justify="center">
           <Flex
             as="form"

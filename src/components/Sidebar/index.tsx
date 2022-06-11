@@ -1,11 +1,11 @@
 import {
-  Box,
   Drawer,
   DrawerBody,
   DrawerCloseButton,
   DrawerContent,
   DrawerHeader,
   DrawerOverlay,
+  theme,
   useBreakpointValue,
 } from "@chakra-ui/react";
 
@@ -23,24 +23,19 @@ export function Sidebar() {
   if (isDrawerSidebar) {
     return (
       <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
-        <DrawerOverlay>
-          <DrawerContent bg="gray.800" p={4}>
-            <DrawerCloseButton mt={6} />
-            <DrawerHeader>Navegação</DrawerHeader>
-            <DrawerBody>
-              <SidebarNav />
-            </DrawerBody>
-          </DrawerContent>
-        </DrawerOverlay>
+        <DrawerOverlay />
+        <DrawerContent
+          background={"transparent"}
+          backdropFilter={"blur(10px)"}
+          p={4}
+        >
+          <DrawerCloseButton mt={6} />
+          <DrawerHeader>Navegação</DrawerHeader>
+          <DrawerBody>
+            <SidebarNav />
+          </DrawerBody>
+        </DrawerContent>
       </Drawer>
     );
   }
-
-  return (
-    <>
-      <Box as="aside" w={64} mr="8">
-        <SidebarNav />
-      </Box>
-    </>
-  );
 }

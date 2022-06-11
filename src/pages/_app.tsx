@@ -6,6 +6,7 @@ import { ReactQueryDevtools } from "react-query/devtools";
 import { theme } from "../styles/theme";
 import { queryClient } from "../services/queryClient";
 import { SidebarDrawerProvider } from "../contexts/SidebarDrawerContext";
+import { AnimatedCanvas } from "../components/Background/AnimatedCanvas";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -13,6 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ChakraProvider theme={theme}>
         <SidebarDrawerProvider>
           <Component {...pageProps} />
+          <AnimatedCanvas />
         </SidebarDrawerProvider>
       </ChakraProvider>
       <ReactQueryDevtools />

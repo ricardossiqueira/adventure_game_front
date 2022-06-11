@@ -6,8 +6,8 @@ import {
   WrapItem,
 } from "@chakra-ui/react";
 import Head from "next/head";
-import { AnimatedCanvas } from "../components/Background/AnimatedCanvas";
 import { Header } from "../components/Header";
+import { Sidebar } from "../components/Sidebar";
 import { TranslatedContainer } from "../components/TranslatedContainer";
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
         <title>Início | Adventure Game</title>
       </Head>
       <Header />
-      <AnimatedCanvas />
+      <Sidebar />
       <main>
         <Flex
           maxW={1220}
@@ -34,7 +34,6 @@ export default function Home() {
           alignItems={"center"}
           justifyContent={"space-between"}
         >
-          {/* <Sidebar /> */}
           <WrapItem as={"section"} maxW={680}>
             <Container>
               <Text as={"span"} fontSize={"1.5rem"} fontWeight={"bold"}>
