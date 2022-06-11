@@ -10,6 +10,7 @@ import {
   IconButton,
   HStack,
 } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 import { useState } from "react";
 import {
   RiCloseLine,
@@ -30,6 +31,8 @@ export function Profile({ showProfileData = true }: ProfileProps) {
 
   const [showLogout, setShowLogout] = useState(false);
   const isAuthenticated = false;
+
+  const router = useRouter();
 
   if (isAuthenticated) {
     return (
@@ -65,10 +68,23 @@ export function Profile({ showProfileData = true }: ProfileProps) {
   return (
     <>
       <HStack spacing={"2rem"}>
-        <Button aria-label="Criar conta" colorScheme={"yellow"}>
+        <Button
+          aria-label="Criar conta"
+          colorScheme={"yellow"}
+          _hover={{ bg: "yellow.400", opacity: 0.9 }}
+          onClick={() => {}}
+        >
           Criar conta
         </Button>
-        <Button variant={"ghost"} aria-label="Entrar" colorScheme={"gray"}>
+        <Button
+          variant={"outline"}
+          aria-label="Entrar"
+          colorScheme={"gray"}
+          _hover={{ bg: "gray.700", opacity: 0.9 }}
+          onClick={() => {
+            router.push("/login");
+          }}
+        >
           Entrar
         </Button>
       </HStack>
