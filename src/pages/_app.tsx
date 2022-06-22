@@ -8,10 +8,6 @@ import { queryClient } from "../services/queryClient";
 import { SidebarDrawerProvider } from "../contexts/SidebarDrawerContext";
 import { AnimatedCanvas } from "../components/Background/AnimatedCanvas";
 
-// react-grid-layout required stylesheet imports
-import "/node_modules/react-grid-layout/css/styles.css";
-import "/node_modules/react-resizable/css/styles.css";
-
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <QueryClientProvider client={queryClient}>
