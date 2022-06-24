@@ -37,7 +37,7 @@ export default function Home() {
           <WrapItem as={"section"} maxW={680}>
             <Container>
               <Text as={"span"} fontSize={"1.5rem"} fontWeight={"bold"}>
-                Greeting
+                Olá, bem vindo 👋
               </Text>
               <Text
                 as={"h1"}
@@ -54,7 +54,7 @@ export default function Home() {
                 lineHeight={"2.5rem"}
                 mt={"1.5rem"}
               >
-                Resume
+                Seu mini jogo de RPG online.
               </Text>
             </Container>
           </WrapItem>
