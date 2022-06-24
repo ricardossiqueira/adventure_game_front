@@ -7,17 +7,13 @@ import {
   useBreakpointValue,
   WrapItem,
   Button,
-  IconButton,
   HStack,
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import {
-  RiCloseLine,
-  RiLoginBoxLine,
-  RiNotificationLine,
-  RiXboxFill,
-} from "react-icons/ri";
+import { RiCloseLine } from "react-icons/ri";
+import { DefaultYellowButton } from "../Buttons/DefaultYellow";
+import { OutlinedGrayButton } from "../Buttons/OutlinedGray";
 
 interface ProfileProps {
   showProfileData?: boolean;
@@ -68,25 +64,17 @@ export function Profile({ showProfileData = true }: ProfileProps) {
   return (
     <>
       <HStack spacing={"2rem"}>
-        <Button
-          aria-label="Criar conta"
-          colorScheme={"yellow"}
-          _hover={{ bg: "yellow.400", opacity: 0.9 }}
-          onClick={() => {}}
-        >
+        <DefaultYellowButton aria-label="Criar conta" onClick={() => {}}>
           Criar conta
-        </Button>
-        <Button
-          variant={"outline"}
+        </DefaultYellowButton>
+        <OutlinedGrayButton
           aria-label="Entrar"
-          colorScheme={"gray"}
-          _hover={{ bg: "gray.700", opacity: 0.9 }}
           onClick={() => {
             router.push("/login");
           }}
         >
           Entrar
-        </Button>
+        </OutlinedGrayButton>
       </HStack>
     </>
   );

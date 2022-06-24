@@ -1,5 +1,5 @@
 import { Box, theme, Flex, Center } from "@chakra-ui/react";
-import CharacterCard from "../CharacterCard";
+import { CharacterCard } from "../Cards/Character";
 
 export function TranslatedContainer() {
   return (

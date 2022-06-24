@@ -1,4 +1,4 @@
-import { Grid, GridItem } from "@chakra-ui/react";
+import { AspectRatio, Grid, GridItem } from "@chakra-ui/react";
 import { ReactNode } from "react";
 
 interface CharacterCardProps {
@@ -10,7 +10,7 @@ interface CharacterCardProps {
   description?: string;
 }
 
-export default function CharacterCard({
+export function CharacterCard({
   image,
   name,
   level,
@@ -28,9 +28,8 @@ export default function CharacterCard({
                         "attributes description description"`}
         gridTemplateRows={"repeat(5, 1fr)"}
         gridTemplateColumns={"repeat(3, 1fr)"}
-        h="100%"
-        w="100%"
-        maxW="40rem"
+        h={`${8 * 5}rem`}
+        w={`${8 * 7}rem`}
         gap="1"
         color="blackAlpha.700"
         fontWeight="bold"
