@@ -1,5 +1,4 @@
 import {
-  Button,
   Flex,
   Tab,
   TabList,
@@ -10,7 +9,6 @@ import {
 } from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
-import { DefaultYellowButton } from "../../components/Buttons/DefaultYellow";
 
 import { CharacterCard } from "../../components/Cards/Character";
 import { Header } from "../../components/Header";

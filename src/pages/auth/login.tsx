@@ -1,11 +1,12 @@
-import { Button, Flex, Stack } from "@chakra-ui/react";
+import { Button, Flex, IconButton, Stack, Text, theme } from "@chakra-ui/react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Head from "next/head";
-
-import { Input } from "../components/Form/Input";
-import { Logo } from "../components/Header/Logo";
+import { Logo } from "../../components/Header/Logo";
+import { Input } from "../../components/Form/Input";
+import router, { useRouter } from "next/router";
+import { RiArrowLeftLine } from "react-icons/ri";
 
 type SignInFormData = {
   email: string;
@@ -28,6 +29,8 @@ export default function SignIn() {
     new Promise((resolve) => setTimeout(resolve, 2000));
   };
 
+  const router = useRouter();
+
   return (
     <>
       <Head>
@@ -46,7 +49,19 @@ export default function SignIn() {
             onSubmit={handleSubmit(handleSignIn)}
           >
             <Stack spacing={4}>
-              <Logo />
+              <Flex justifyContent={"space-between"} alignItems={"center"}>
+                <IconButton
+                  variant={"unstyled"}
+                  w={"fit-content"}
+                  icon={<RiArrowLeftLine size={theme.sizes["6"]} />}
+                  aria-label={"Voltar"}
+                  onClick={router.back}
+                  _hover={{ opacity: 0.8 }}
+                />
+                <Text as="h3" fontSize="2xl" fontWeight={"bold"}>
+                  Entrar
+                </Text>
+              </Flex>
               <Input
                 name="email"
                 label="Email"

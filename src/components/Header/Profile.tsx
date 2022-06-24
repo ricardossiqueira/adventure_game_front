@@ -64,13 +64,18 @@ export function Profile({ showProfileData = true }: ProfileProps) {
   return (
     <>
       <HStack spacing={"2rem"}>
-        <DefaultYellowButton aria-label="Criar conta" onClick={() => {}}>
+        <DefaultYellowButton
+          aria-label="Criar conta"
+          onClick={() => {
+            router.push("/auth/create ");
+          }}
+        >
           Criar conta
         </DefaultYellowButton>
         <OutlinedGrayButton
           aria-label="Entrar"
           onClick={() => {
-            router.push("/login");
+            router.push("/auth/login");
           }}
         >
           Entrar

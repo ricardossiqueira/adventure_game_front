@@ -8,9 +8,6 @@ import {
   ModalBody,
   ModalFooter,
   Stack,
-  Button,
-  IconButton,
-  VisuallyHiddenInput,
 } from "@chakra-ui/react";
 import React, { useRef } from "react";
 import * as yup from "yup";
@@ -21,8 +18,6 @@ import { DefaultYellowButton } from "../Buttons/DefaultYellow";
 import { OutlinedGrayButton } from "../Buttons/OutlinedGray";
 import { Input } from "../Form/Input";
 import { Textarea } from "../Form/TextArea";
-import { RiUpload2Line } from "react-icons/ri";
-import { VisualElementDragControls } from "framer-motion/types/gestures/drag/VisualElementDragControls";
 import { FileInput } from "../Form/FileInput";
 
 type CreateCharacterFormData = {
