@@ -18,11 +18,11 @@ export default function Home() {
 
   return (
     <>
+      <Sidebar />
       <Head>
         <title>Início | Adventure Game</title>
       </Head>
       <Header />
-      <Sidebar />
       <main>
         <Flex
           maxW={1220}

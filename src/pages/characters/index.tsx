@@ -37,7 +37,6 @@ export default function Characters() {
             justifyContent={"space-around"}
             flexDirection={"column"}
             background={"gray.800"}
-            backdropFilter={"blur(10px)"}
             borderRadius={"1rem"}
           >
             <Flex w={"100%"} h={"100%"} pb={"2rem"}>

@@ -18,7 +18,7 @@ COPY --from=deps /opt/app/node_modules ./node_modules
 RUN yarn build
 
 # Production image, copy all the files and run next
-FROM node:lts-alpine AS runner
+FROM node:lts-alpine AS production
 
 ARG X_TAG
 WORKDIR /opt/app

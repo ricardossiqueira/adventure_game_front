@@ -25,7 +25,6 @@ export default function Missions() {
             justifyContent={"space-around"}
             flexDirection={"column"}
             background={"gray.800"}
-            backdropFilter={"blur(10px)"}
             borderRadius={"1rem"}
           >
             <Stack spacing={3}>
