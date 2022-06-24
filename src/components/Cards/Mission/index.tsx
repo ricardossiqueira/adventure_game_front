@@ -12,25 +12,28 @@ export function MissionCard() {
                       `}
         gridTemplateRows={"repeat(4, 1fr)"}
         gridTemplateColumns={"repeat(3, 1fr)"}
-        h={`${8 * 5}rem`}
-        w={`${8 * 7}rem`}
+        // h={`${8 * 5}rem`}
+        // w={`${8 * 7}rem`}
+        h={"100%"}
+        w={"100%"}
         gap="1"
-        color="blackAlpha.700"
+        color="gray.100"
         fontWeight="bold"
+        py={"1rem"}
       >
-        <GridItem pl="2" bg="orange.300" area={"image"}>
+        <GridItem pl="2" bg="gray.700" area={"image"}>
           image
         </GridItem>
-        <GridItem pl="2" bg="pink.300" area={"name"}>
+        <GridItem pl="2" bg="gray.700" area={"name"}>
           name
         </GridItem>
-        <GridItem pl="2" bg="red.300" area={"difficulty"}>
+        <GridItem pl="2" bg="gray.700" area={"difficulty"}>
           difficulty
         </GridItem>
-        <GridItem pl="2" bg="green.300" area={"mod"}>
+        <GridItem pl="2" bg="gray.700" area={"mod"}>
           mod
         </GridItem>
-        <GridItem pl="2" bg="blue.300" area={"description"}>
+        <GridItem pl="2" bg="gray.700" area={"description"}>
           description
         </GridItem>
       </Grid>

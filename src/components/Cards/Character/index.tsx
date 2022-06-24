@@ -28,28 +28,31 @@ export function CharacterCard({
                         "attributes description description"`}
         gridTemplateRows={"repeat(5, 1fr)"}
         gridTemplateColumns={"repeat(3, 1fr)"}
-        h={`${8 * 5}rem`}
-        w={`${8 * 7}rem`}
+        // h={`${8 * 5}rem`}
+        // w={`${8 * 7}rem`}
+        h={"100%"}
+        w={"100%"}
+        // py={"1rem"}
         gap="1"
-        color="blackAlpha.700"
+        color="gray.100"
         fontWeight="bold"
       >
-        <GridItem pl="2" bg="orange.300" area={"image"}>
+        <GridItem pl="2" bg="gray.700" area={"image"}>
           image
         </GridItem>
-        <GridItem pl="2" bg="pink.300" area={"name"}>
+        <GridItem pl="2" bg="gray.700" area={"name"}>
           name
         </GridItem>
-        <GridItem pl="2" bg="red.300" area={"level"}>
+        <GridItem pl="2" bg="gray.700" area={"level"}>
           level
         </GridItem>
-        <GridItem pl="2" bg="green.300" area={"lifes"}>
+        <GridItem pl="2" bg="gray.700" area={"lifes"}>
           lifes
         </GridItem>
-        <GridItem pl="2" bg="purple.300" area={"attributes"}>
+        <GridItem pl="2" bg="gray.700" area={"attributes"}>
           attributes
         </GridItem>
-        <GridItem pl="2" bg="blue.300" area={"description"}>
+        <GridItem pl="2" bg="gray.700" area={"description"}>
           description
         </GridItem>
       </Grid>

@@ -1,4 +1,5 @@
 import {
+  Box,
   Flex,
   Tab,
   TabList,
@@ -39,36 +40,26 @@ export default function Characters() {
             backdropFilter={"blur(10px)"}
             borderRadius={"1rem"}
           >
-            <Tabs variant="soft-rounded">
-              <TabList>
-                <Tab
-                  _hover={{ opacity: 0.8 }}
-                  _selected={{
-                    backgroundColor: theme.colors.yellow[400],
-                    color: theme.colors.gray[900],
-                  }}
-                >
-                  Char 1 Name
-                </Tab>
-                <Tab
-                  _hover={{ opacity: 0.8 }}
-                  _selected={{
-                    backgroundColor: theme.colors.yellow[400],
-                    color: theme.colors.gray[900],
-                  }}
-                >
-                  Char 2 Name
-                </Tab>
-              </TabList>
-              <TabPanels>
-                <TabPanel>
-                  <CharacterCard />
-                </TabPanel>
-                <TabPanel>
-                  <CharacterCard />
-                </TabPanel>
-              </TabPanels>
-            </Tabs>
+            <Flex w={"100%"} h={"100%"} pb={"2rem"}>
+              <Tabs variant="soft-rounded" w={"100%"} h={"100%"}>
+                <TabList>
+                  <Tab
+                    _hover={{ opacity: 0.8 }}
+                    _selected={{
+                      backgroundColor: theme.colors.yellow[400],
+                      color: theme.colors.gray[900],
+                    }}
+                  >
+                    Personagem 1
+                  </Tab>
+                </TabList>
+                <TabPanels w={"100%"} h={"100%"}>
+                  <TabPanel px={0} w={"100%"} h={"100%"}>
+                    <CharacterCard />
+                  </TabPanel>
+                </TabPanels>
+              </Tabs>
+            </Flex>
             <CreateCharacterModal />
           </Flex>
         </section>
