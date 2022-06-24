@@ -3,7 +3,9 @@ import {
   RiBook2Line,
   RiHome2Line,
   RiInputMethodLine,
+  RiLoginBoxLine,
   RiUser2Line,
+  RiUserAddLine,
 } from "react-icons/ri";
 
 import { NavLink } from "./NavLink";
@@ -25,8 +27,11 @@ export function SidebarNav() {
           </NavLink>
         </NavSection>
         <NavSection title="USUÁRIO">
-          <NavLink icon={RiInputMethodLine} href="/sair">
-            Sair
+          <NavLink icon={RiLoginBoxLine} href="/auth/login">
+            Entrar
+          </NavLink>
+          <NavLink icon={RiUserAddLine} href="/auth/create">
+            Criar Conta
           </NavLink>
         </NavSection>
       </Stack>
