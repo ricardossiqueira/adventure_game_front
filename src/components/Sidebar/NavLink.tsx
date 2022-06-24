@@ -1,3 +1,5 @@
+// Componente para indicar visualmente quando o item do nav menu esta ativo - no caso mobile
+
 import {
   Icon,
   Link as ChakraLink,

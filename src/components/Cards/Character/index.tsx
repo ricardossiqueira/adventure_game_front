@@ -1,4 +1,6 @@
-import { AspectRatio, Grid, GridItem } from "@chakra-ui/react";
+// Componente "ficha do personagem"
+
+import { Grid, GridItem } from "@chakra-ui/react";
 import { ReactNode } from "react";
 
 interface CharacterCardProps {
@@ -37,6 +39,9 @@ export function CharacterCard({
         color="gray.100"
         fontWeight="bold"
       >
+        {/*
+        Dados mockados, ainda precisa implementar o consumo do backend
+        */}
         <GridItem pl="2" bg="gray.700" area={"image"}>
           image
         </GridItem>

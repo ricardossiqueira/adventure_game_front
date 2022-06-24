@@ -1,4 +1,6 @@
-import { AspectRatio, Grid, GridItem } from "@chakra-ui/react";
+// Componente "ficha da missao"
+
+import { Grid, GridItem } from "@chakra-ui/react";
 
 export function MissionCard() {
   return (
@@ -21,6 +23,9 @@ export function MissionCard() {
         fontWeight="bold"
         py={"1rem"}
       >
+        {/*
+        Dados mockados, ainda precisa implementar o consumo do backend
+        */}
         <GridItem pl="2" bg="gray.700" area={"image"}>
           image
         </GridItem>

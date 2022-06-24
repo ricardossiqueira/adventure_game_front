@@ -1,5 +1,6 @@
+// Pagina de personagens da aplicacao
+
 import {
-  Box,
   Flex,
   Tab,
   TabList,
@@ -11,6 +12,7 @@ import {
 import Head from "next/head";
 import React from "react";
 
+// Componentes customizados
 import { CharacterCard } from "../../components/Cards/Character";
 import { Header } from "../../components/Header";
 import { CreateCharacterModal } from "../../components/Modal/CreateCharacter";
@@ -40,6 +42,9 @@ export default function Characters() {
             borderRadius={"1rem"}
           >
             <Flex w={"100%"} h={"100%"} pb={"2rem"}>
+              {/*
+               Dados mockados, ainda precisa implementar o consumo do backend
+               */}
               <Tabs variant="soft-rounded" w={"100%"} h={"100%"}>
                 <TabList>
                   <Tab

@@ -1,4 +1,6 @@
-import { Box, theme, Flex, Center } from "@chakra-ui/react";
+// Componente de div transladada com a ficha do personagem na pagina inicial
+
+import { Box, theme, Flex } from "@chakra-ui/react";
 import { CharacterCard } from "../Cards/Character";
 
 export function TranslatedContainer() {

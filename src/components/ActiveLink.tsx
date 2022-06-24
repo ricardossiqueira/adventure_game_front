@@ -1,3 +1,5 @@
+// Componente de feedback visual para quando o item do nav menu esta ativo
+
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 import { cloneElement, ReactElement } from "react";

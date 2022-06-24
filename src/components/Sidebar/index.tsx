@@ -1,3 +1,5 @@
+// Componente principal do menu lateral no caso mobile
+
 import {
   Drawer,
   DrawerBody,
@@ -5,7 +7,6 @@ import {
   DrawerContent,
   DrawerHeader,
   DrawerOverlay,
-  theme,
   useBreakpointValue,
 } from "@chakra-ui/react";
 

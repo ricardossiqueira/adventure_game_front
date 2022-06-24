@@ -1,26 +1,43 @@
+// Pagina de criar conta
+
 import { Button, Flex, IconButton, Stack, Text, theme } from "@chakra-ui/react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Head from "next/head";
-import { Logo } from "../../components/Header/Logo";
-import { Input } from "../../components/Form/Input";
-import { RiArrowLeftCircleLine, RiArrowLeftLine } from "react-icons/ri";
+import { RiArrowLeftLine } from "react-icons/ri";
 import { useRouter } from "next/router";
 
+// Componentes customizados
+import { Input } from "../../components/Form/Input";
+
+// Schemas para validacao dos dados inseridos pelo usuario
 type SignInFormData = {
-  email: string;
+  username: string;
   password: string;
 };
 
 const yupSignInFormSchema = yup.object().shape({
-  email: yup.string().required("Email obrigatório").email("Email inválido"),
-  password: yup.string().required("Senha obrigatória"),
+  username: yup
+    .string()
+    .required("Nome de usuário obrigatório")
+    .min(5, "Mínimo de 5 caracteres"),
+  password: yup
+    .string()
+    .required("Senha obrigatória")
+    .min(6, "Mínimo de 6 caracteres"),
   password_confirmation: yup
     .string()
     .required("Confirmação de senha obrigatória")
+    .min(6, "Mínimo de 6 caracteres")
     .oneOf([yup.ref("password"), null], "As senhas devem ser iguais"),
 });
+
+{
+  /*
+  Dados mockados, ainda precisa implementar o consumo do backend
+  */
+}
 
 export default function SignIn() {
   const {
@@ -67,11 +84,10 @@ export default function SignIn() {
                 </Text>
               </Flex>
               <Input
-                name="email"
-                label="Email"
-                type="email"
-                error={errors.email}
-                {...register("email")}
+                name="username"
+                label="Nome de usuário"
+                error={errors.username}
+                {...register("username")}
               />
               <Input
                 name="password"

@@ -1,3 +1,5 @@
+// Pagina de missoes
+
 import { Button, Flex, Select, Stack, theme } from "@chakra-ui/react";
 import Head from "next/head";
 import { MissionCard } from "../../components/Cards/Mission";
@@ -28,6 +30,9 @@ export default function Missions() {
             borderRadius={"1rem"}
           >
             <Stack spacing={3}>
+              {/*
+               Dados mockados, ainda precisa implementar o consumo do backend
+               */}
               <Select
                 placeholder="Selecione uma missão"
                 size="md"

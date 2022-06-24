@@ -1,8 +1,9 @@
+// Rotas e links do menu lateral - caso mobile
+
 import { Stack } from "@chakra-ui/react";
 import {
   RiBook2Line,
   RiHome2Line,
-  RiInputMethodLine,
   RiLoginBoxLine,
   RiUser2Line,
   RiUserAddLine,
